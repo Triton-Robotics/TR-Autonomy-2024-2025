@@ -3,3 +3,4 @@ install/
 log/
 .vscode/
 .idea/
+rosbag2*
