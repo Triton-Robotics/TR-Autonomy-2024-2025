@@ -1,9 +1,9 @@
 [submodule "src/TR-Camera-24"]
 	path = src/TR-Camera-24
 	url = https://github.com/Triton-Robotics/TR-Camera-24.git
-[submodule "src/TR-Detector-24"]
-	path = src/TR-Detector-24
-	url = https://github.com/Triton-Robotics/TR-Detector-24.git
+# [submodule "src/TR-Detector-24"]
+# 	path = src/TR-Detector-24
+# 	url = https://github.com/Triton-Robotics/TR-Detector-24.git
 [submodule "src/TR-STM32-Bridge-24"]
 	path = src/TR-STM32-Bridge-24
 	url = https://github.com/Triton-Robotics/TR-STM32-Bridge-24.git
@@ -13,3 +13,9 @@
 [submodule "src/TR-Messages-24"]
 	path = src/TR-Messages-24
 	url = https://github.com/Triton-Robotics/TR-Messages-24.git
+[submodule "src/--force"]
+	path = src/--force
+	url = https://github.com/Triton-Robotics/TR-Detector-24.git
+[submodule "TR-Detector-24"]
+	path = src/TR-Detector-24
+	url = https://github.com/Triton-Robotics/TR-Detector-24.git
