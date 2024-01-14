@@ -10,6 +10,3 @@
 [submodule "src/TR-Messages-24"]
 	path = src/TR-Messages-24
 	url = https://github.com/Triton-Robotics/TR-Messages-24
-[submodule "src/TR-Camera-24"]
-	path = src/TR-Camera-24
-	url = https://github.com/Triton-Robotics/TR-Camera-24
