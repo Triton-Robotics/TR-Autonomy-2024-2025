@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/TR-Camera-24" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/TR-Detector-24" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/TR-Lightbar-24" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/TR-Messages-24" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/TR-STM32-Bridge-24" vcs="Git" />
+  </component>
+</project>
