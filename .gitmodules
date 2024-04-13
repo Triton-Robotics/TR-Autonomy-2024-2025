@@ -13,9 +13,6 @@
 [submodule "src/TR-Messages-24"]
 	path = src/TR-Messages-24
 	url = https://github.com/Triton-Robotics/TR-Messages-24.git
-[submodule "src/--force"]
-	path = src/--force
-	url = https://github.com/Triton-Robotics/TR-Detector-24.git
-[submodule "TR-Detector-24"]
-	path = src/TR-Detector-24
-	url = https://github.com/Triton-Robotics/TR-Detector-24.git
+[submodule "src/vision_msgs"]
+	path = src/vision_msgs
+	url = https://github.com/ros-perception/vision_msgs.git
