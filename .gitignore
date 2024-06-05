@@ -1,4 +1,4 @@
 build/
 install/
 log/
-/src/TR-Detector-24/cmake-build-debug/
+.vscode/
