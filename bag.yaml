@@ -1,0 +1,5 @@
+/camera/image:
+    history: keep_all
+    lifespan:
+        sec: 0
+        nsec: 100000000
