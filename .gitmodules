@@ -16,3 +16,6 @@
 [submodule "src/vision_msgs"]
 	path = src/vision_msgs
 	url = https://github.com/ros-perception/vision_msgs.git
+[submodule "src/TR-Visualizers-24"]
+	path = src/TR-Visualizers-24
+	url = https://github.com/Triton-Robotics/TR-Visualizers-24.git
