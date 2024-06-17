@@ -22,3 +22,6 @@
 [submodule "src/TR-Binary-Classical-Node"]
 	path = src/TR-Binary-Classical-Node
 	url = https://github.com/Triton-Robotics/TR-Binary-Classical-Node.git
+[submodule "src/TR-Bin-Uart"]
+	path = src/TR-Bin-Uart
+	url = https://github.com/Triton-Robotics/TR-Bin-Uart.git
