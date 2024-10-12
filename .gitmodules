@@ -24,4 +24,4 @@
 	url = https://github.com/Triton-Robotics/TR-Bin-Uart.git
 [submodule "src/Aiming-Node"]
 	path = src/Aiming-Node
-	url = https://github.com/Triton-Robotics/Aiming-Node.git
+	url = git@github.com:Triton-Robotics/Aiming-Node.git
