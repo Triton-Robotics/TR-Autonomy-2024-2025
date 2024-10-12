@@ -7,9 +7,6 @@
 [submodule "src/TR-STM32-Bridge-24"]
 	path = src/TR-STM32-Bridge-24
 	url = https://github.com/Triton-Robotics/TR-STM32-Bridge-24.git
-[submodule "src/TR-Lightbar-24"]
-	path = src/TR-Lightbar-24
-	url = https://github.com/Triton-Robotics/TR-Lightbar-24.git
 [submodule "src/TR-Messages-24"]
 	path = src/TR-Messages-24
 	url = https://github.com/Triton-Robotics/TR-Messages-24.git
@@ -25,3 +22,6 @@
 [submodule "src/TR-Bin-Uart"]
 	path = src/TR-Bin-Uart
 	url = https://github.com/Triton-Robotics/TR-Bin-Uart.git
+[submodule "src/Aiming-Node"]
+	path = src/Aiming-Node
+	url = git@github.com:Triton-Robotics/Aiming-Node.git
