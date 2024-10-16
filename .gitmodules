@@ -10,18 +10,12 @@
 [submodule "src/TR-Messages-24"]
 	path = src/TR-Messages-24
 	url = https://github.com/Triton-Robotics/TR-Messages-24.git
-[submodule "src/vision_msgs"]
-	path = src/vision_msgs
-	url = https://github.com/ros-perception/vision_msgs.git
 [submodule "src/TR-Visualizers-24"]
 	path = src/TR-Visualizers-24
 	url = https://github.com/Triton-Robotics/TR-Visualizers-24.git
 [submodule "src/TR-Binary-Classical-Node"]
 	path = src/TR-Binary-Classical-Node
 	url = https://github.com/Triton-Robotics/TR-Binary-Classical-Node.git
-[submodule "src/TR-Bin-Uart"]
-	path = src/TR-Bin-Uart
-	url = https://github.com/Triton-Robotics/TR-Bin-Uart.git
 [submodule "src/Aiming-Node"]
 	path = src/Aiming-Node
 	url = https://github.com/Triton-Robotics/Aiming-Node.git
