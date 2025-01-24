@@ -13,3 +13,15 @@
 [submodule "src/Aiming-Node"]
 	path = src/Aiming-Node
 	url = https://github.com/Triton-Robotics/Aiming-Node.git
+[submodule "src/Utils"]
+	path = src/Utils
+	url = git@github.com:Triton-Robotics/Utils.git
+[submodule "src/SLAM"]
+	path = src/SLAM
+	url = git@github.com:Triton-Robotics/SLAM.git
+[submodule "src/Tracking"]
+	path = src/Tracking
+	url = git@github.com:Triton-Robotics/Tracking.git
+[submodule "src/Simulation"]
+	path = src/Simulation
+	url = git@github.com:Triton-Robotics/Simulation.git
