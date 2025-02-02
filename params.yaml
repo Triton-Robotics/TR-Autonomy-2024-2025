@@ -1,0 +1,10 @@
+/sim_node:
+  ros__parameters:
+    aspect_ratio: 1.25
+    cam_hz: 20.0
+    fov: 27.95
+    lidar_enable: true
+    lidar_hz: 5.5
+    camera_resolution: 1.0
+    sim_speed: 1.0
+
