@@ -2,7 +2,7 @@
   ros__parameters:
     camera_resolution: 1.0
     cam_hz: 20.0
-    fov: 27.95
+    fov: 34.68
     lidar_enable: true
     lidar_hz: 5.5
     sim_speed: 1.0
