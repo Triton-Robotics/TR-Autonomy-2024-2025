@@ -19,9 +19,6 @@
 [submodule "src/SLAM"]
 	path = src/SLAM
 	url = git@github.com:Triton-Robotics/SLAM.git
-[submodule "src/Tracking"]
-	path = src/Tracking
-	url = git@github.com:Triton-Robotics/Tracking.git
 [submodule "src/Simulation"]
 	path = src/Simulation
 	url = git@github.com:Triton-Robotics/Simulation.git
