@@ -8,7 +8,6 @@ comment
 NODE_NAME=$1
 EXECUTABLE=$2
 
-cd ..
 source /opt/ros/humble/setup.bash
 source install/setup.bash
 ros2 run "$NODE_NAME" "$EXECUTABLE" --ros-args --params-file params.yaml
