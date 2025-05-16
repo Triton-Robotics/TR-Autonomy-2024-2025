@@ -10,3 +10,22 @@ cd ./launch
 chmod u+x ./sim_aiming_launch.bash
 ./sim_aiming_launch.bash
 ```
+
+## systemd services 
+
+```
+sudo ln -s (filepath)
+sudo systemctl daemon-reload
+sudo systemctl enable <service>.service
+sudo systemctl disable <service>.service
+
+sudo systemctl start <service>.service
+sudo systemctl stop <service>.service
+sudo systemctl restart <service>.service
+
+
+# follow logs and only show for current boot
+sudo journalctl ‑u <service>.service ‑f - b
+
+sudo systemctl link /path/to/my.service
+```
