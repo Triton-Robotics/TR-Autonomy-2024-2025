@@ -3,8 +3,8 @@ Description=ROS2 node %i
 After=network-online.target
 
 [Service]
-User=keyush
-WorkingDirectory=/home/keyush/coding/tr_robotics/dev/TR-Autonomy-2024-2025
+User=triton
+WorkingDirectory=/home/triton/Documents/cv-dev/TR-Autonomy-2024-2025/
 ExecStart= \
   /bin/bash -lc \
   'source /opt/ros/humble/setup.bash && \
