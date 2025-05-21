@@ -13,19 +13,37 @@ chmod u+x ./sim_aiming_launch.bash
 
 ## systemd services 
 
+### First time setup
 ```
-sudo ln -s (filepath)
+sudo systemctl link [/path/to/launch_ros_node@.service]
+# example "launch_ros_node@camera_node.service"
+sudo systemctl enable launch_ros_node@[your_node].service
 sudo systemctl daemon-reload
-sudo systemctl enable <service>.service
-sudo systemctl disable <service>.service
-
-sudo systemctl start <service>.service
-sudo systemctl stop <service>.service
+sudo systemctl start launch_ros_node@[your_node].service
+```
+### other helpful commands
+```
+# if a node stops running / fails instead of restarting the system you can run this command
 sudo systemctl restart <service>.service
 
+# status of all our defined .service units running
+systemctl list-units --type=service | grep "launch_ros_node@"
 
-# follow logs and only show for current boot
-sudo journalctl ‑u <service>.service ‑f - b
+# check if our .service units are enabled to run on boot or not
+# enabled   enabled = the service will automatically start on boot
+# linked    enabled = the service is linked to systems (using the systemctl link command we used earlier) but will not start on boot
+# run the enable and disable commands to change this 
+systemctl list-unit-files --type=service | grep "launch_ros_node@"
 
-sudo systemctl link /path/to/my.service
+#view std out of a particular node
+sudo journalctl ‑u launch_ros_node@<your_node>.service ‑f - b
+
+
+```
+
+### enable / disable all nodes
+// TODO: TEST AND FIX THIS idk if this works
+```
+sudo systemctl enable launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@aiming_node.service
+sudo systemctl disable launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@aiming_node.service 
 ```
