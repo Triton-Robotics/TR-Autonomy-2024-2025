@@ -16,6 +16,7 @@ chmod u+x ./sim_aiming_launch.bash
 ### First time setup
 ```
 sudo systemctl link [/path/to/launch_ros_node@.service]
+
 # example "launch_ros_node@camera_node.service"
 sudo systemctl enable launch_ros_node@[your_node].service
 sudo systemctl daemon-reload
@@ -36,14 +37,18 @@ systemctl list-units --type=service | grep "launch_ros_node@"
 systemctl list-unit-files --type=service | grep "launch_ros_node@"
 
 #view std out of a particular node
-sudo journalctl ‑u launch_ros_node@<your_node>.service ‑f - b
-
-
+sudo journalctl -u launch_ros_node@<your_node>.service -f -b
 ```
 
-### enable / disable all nodes
-// TODO: TEST AND FIX THIS idk if this works
+### enable / disable / stop / restart all nodes
 ```
+# make it so all nodes start on boot
 sudo systemctl enable launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@aiming_node.service
-sudo systemctl disable launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@aiming_node.service 
+# make it so all nodes DO NOT start on boot
+sudo systemctl disable launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@stm32_bridge.service launch_ros_node@aiming_node.service
+
+# stop all nodes for this perticular boot
+sudo systemctl stop launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@stm32_bridge.service launch_ros_node@aiming_node.service
+# restart any nodes that have stopped running
+sudo systemctl restart launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@stm32_bridge.service launch_ros_node@aiming_node.service
 ```
