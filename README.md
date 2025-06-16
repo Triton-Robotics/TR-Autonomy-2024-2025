@@ -52,3 +52,8 @@ sudo systemctl stop launch_ros_node@camera_node.service launch_ros_node@detector
 # restart any nodes that have stopped running
 sudo systemctl restart launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@stm32_bridge.service launch_ros_node@aiming_node.service
 ```
+## ROS bag recordings
+sudo systemctl link [/path/to/launch_ros_node@.service]
+sudo systemctl enable rosbag.service
+sudo systemctl disable rosbag.service
+systemctl list-units --type=service | grep "rosbag" 
