@@ -10,3 +10,6 @@ cd ./launch
 chmod u+x ./sim_aiming_launch.bash
 ./sim_aiming_launch.bash
 ```
+
+## Jetson setup from scratch
+[jetson setup](.md/jetson_setup.md)
