@@ -1,0 +1,17 @@
+[Unit]
+Description=record relevant rosbags for comp matches
+After=network-online.target
+
+[Service]
+User=triton
+WorkingDirectory=/home/triton/Documents/cv-dev/TR-Autonomy-2024-2025/
+ExecStart= \
+  /bin/bash -lc \
+  'source /opt/ros/humble/setup.bash && \
+  source install/setup.bash && \
+  ros2 bag record /camera/image'
+Restart=on-failure
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target
