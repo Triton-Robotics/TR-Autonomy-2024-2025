@@ -57,3 +57,7 @@ sudo systemctl link [/path/to/launch_ros_node@.service]
 sudo systemctl enable rosbag.service
 sudo systemctl disable rosbag.service
 systemctl list-units --type=service | grep "rosbag" 
+
+
+## Jetson setup from scratch
+[jetson setup](.md/jetson_setup.md)

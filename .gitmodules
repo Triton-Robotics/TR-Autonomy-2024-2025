@@ -1,18 +1,18 @@
 [submodule "src/TR-Camera-24"]
 	path = src/TR-Camera-24
-	url = https://github.com/Triton-Robotics/TR-Camera-24.git
+	url = git@github.com:Triton-Robotics/TR-Camera-24.git
 [submodule "src/TR-Detector-24"]
 	path = src/TR-Detector-24
-	url = https://github.com/Triton-Robotics/TR-Detector-24.git
+	url = git@github.com:Triton-Robotics/TR-Detector-24.git
 [submodule "src/TR-STM32-Bridge-24"]
 	path = src/TR-STM32-Bridge-24
-	url = https://github.com/Triton-Robotics/TR-STM32-Bridge-24.git
+	url = git@github.com:Triton-Robotics/TR-STM32-Bridge-24.git
 [submodule "src/TR-Binary-Classical-Node"]
 	path = src/TR-Binary-Classical-Node
-	url = https://github.com/Triton-Robotics/TR-Binary-Classical-Node.git
+	url = git@github.com:Triton-Robotics/TR-Binary-Classical-Node.git
 [submodule "src/Aiming-Node"]
 	path = src/Aiming-Node
-	url = https://github.com/Triton-Robotics/Aiming-Node.git
+	url = git@github.com:Triton-Robotics/Aiming.git
 [submodule "src/Utils"]
 	path = src/Utils
 	url = git@github.com:Triton-Robotics/Utils.git
