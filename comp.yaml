@@ -1,0 +1,6 @@
+# RED 1
+# BLUE 2
+
+/aiming_node:
+  ros__parameters:
+    team_color: 1

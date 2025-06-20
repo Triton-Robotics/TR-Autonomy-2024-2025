@@ -9,7 +9,7 @@ ExecStart= \
   /bin/bash -lc \
   'source /opt/ros/humble/setup.bash && \
   source install/setup.bash && \
-  ros2 run %i %i'
+  ros2 run %i %i --ros-args --params-file comp.yaml'
 Restart=on-failure
 RestartSec=1s
 
