@@ -40,26 +40,36 @@ systemctl list-unit-files --type=service | grep "launch_ros_node@"
 sudo journalctl -u launch_ros_node@<your_node>.service -f -b
 ```
 
-### enable / disable / stop / restart all nodes
-```
-# make it so all nodes start on boot
-sudo systemctl enable launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@aiming_node.service
-# make it so all nodes DO NOT start on boot
-sudo systemctl disable launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@stm32_bridge.service launch_ros_node@aiming_node.service
-
-# stop all nodes for this perticular boot
-sudo systemctl stop launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@stm32_bridge.service launch_ros_node@aiming_node.service
-# restart any nodes that have stopped running
-sudo systemctl restart launch_ros_node@camera_node.service launch_ros_node@detector_node.service launch_ros_node@stm32_bridge.service launch_ros_node@aiming_node.service
-```
 ### ROS bag recordings
 ```
-sudo systemctl link [/path/to/launch_ros_node@.service]
+sudo systemctl link [/path/to/rosbag.service]
 sudo systemctl enable rosbag.service
 sudo systemctl disable rosbag.service
-systemctl list-units --type=service | grep "rosbag"
+sudo systemctl status rosbag.service
 ``` 
+### link / enable / disable all nodes, rosbag, jetson overclock startup
+#### link 
 
+```
+chmod +x services/scripts/jetson_startup.bash 
+
+sudo systemctl link /home/triton/Documents/cv-dev/TR-Autonomy-2024-2025/services/launch_ros_node@.service /home/triton/Documents/cv-dev/TR-Autonomy-2024-2025/services/yolox.service /home/triton/Documents/cv-dev/TR-Autonomy-2024-2025/services/rosbag.service /home/triton/Documents/cv-dev/TR-Autonomy-2024-2025/services/jetson_setup_tr.service 
+```
+
+#### enable
+```
+sudo systemctl enable launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@classical_node launch_ros_node@aiming_node.service yolox.service rosbag.service jetson_setup_tr.service
+```
+
+#### disable
+```
+sudo systemctl disable launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@classical_node launch_ros_node@aiming_node.service yolox.service rosbag.service jetson_setup_tr.service
+```
+
+#### stop
+```
+sudo systemctl stop launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@classical_node launch_ros_node@aiming_node.service yolox.service rosbag.service jetson_setup_tr.service
+```
 
 ## Jetson setup from scratch
 [jetson setup](.md/jetson_setup.md)

@@ -1,0 +1,14 @@
+[Unit]
+Description=configure jetson to run as fast as possible
+After=multi-user.target network.target
+Wants=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+User=root
+WorkingDirectory=/home/triton/Documents/cv-dev/TR-Autonomy-2024-2025/
+ExecStart=/home/triton/Documents/cv-dev/TR-Autonomy-2024-2025/services/scripts/jetson_startup.bash
+
+[Install]
+WantedBy=multi-user.target

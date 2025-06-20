@@ -1,5 +1,5 @@
 [Unit]
-Description=[TR] record relevant rosbags for comp matches
+Description=[TR] ROS2 node YOLOX
 After=network-online.target
 
 [Service]
@@ -9,7 +9,7 @@ ExecStart= \
   /bin/bash -lc \
   'source /opt/ros/humble/setup.bash && \
   source install/setup.bash && \
-  ros2 bag record -o ~/Documents/rosbags/camera_$(date +%%Y-%%m-%%d_%%H-%%M-%%S) /camera/image'
+  ros2 launch yolox_ros_cpp yolox_tensorrt.launch.py'
 Restart=on-failure
 RestartSec=1s
 
