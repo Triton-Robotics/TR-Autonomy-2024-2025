@@ -4,3 +4,4 @@
 /aiming_node:
   ros__parameters:
     team_color: 1
+    patrol: false

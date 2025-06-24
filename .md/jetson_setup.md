@@ -56,6 +56,11 @@ this allows the user to access the tx/rx pin outs
 
 `$ sudo usermod -a -G dialout $USER` 
 
+### classical_node dependency
+```
+pip install filterpy
+```
+
 ## bash shortcuts
 `$ vim ~/.bashrc`
 
