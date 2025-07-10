@@ -27,9 +27,11 @@ sudo systemctl disable launch_ros_node@[your_node].service
 ```
 # enable and start all nodes for comp environment 
 # in root directory of this repository
+chmod +x ./services/scripts/enable_and_start_comp.bash
 ./services/scripts/enable_and_start_comp.bash
 
 # disable and stop all nodes for comp environment
+chmod +x ./services/scripts/disable_and_stop_comp.bash
 ./services/scripts/disable_and_stop_comp.bash
 ```
 
