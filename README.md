@@ -11,6 +11,7 @@ This repository should only include final, runnable code that follows coding con
 | [Systemd, launch nodes on boot](.md/systemd.md)|
 | [Serial terminal over usb-c port](.md/serial_terminal.md)|
 | [Bringing up a new Jetson](.md/jetson_setup.md)|
+| [Code style guide](.md/Styles.md)|
 
 ## Launching
 
