@@ -6,7 +6,7 @@ Systemd can be used to link service files that define a task to execute on start
 
 To have a service file run on boot you must first **link** it, then **enable** it, to have the service run immediately without a reboot you must **start** it.
 
-To stop active services running you must **stop** it, and to prevent it running on future reboots, you must **disable** it.
+To stop a active service running you must **stop** it, and to prevent it running on future reboots, you must **disable** it.
 
 ## example
 
