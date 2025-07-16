@@ -25,3 +25,6 @@
 [submodule "src/TR-YOLOX-ROS"]
 	path = src/TR-YOLOX-ROS
 	url = git@github.com:Triton-Robotics/TR-YOLOX-ROS.git
+[submodule "src/Simulation-ManiSkill"]
+	path = src/Simulation-ManiSkill
+	url = git@github.com:Triton-Robotics/Simulation-ManiSkill.git
