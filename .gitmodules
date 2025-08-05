@@ -19,9 +19,6 @@
 [submodule "src/SLAM"]
 	path = src/SLAM
 	url = git@github.com:Triton-Robotics/SLAM.git
-[submodule "src/Simulation"]
-	path = src/Simulation
-	url = git@github.com:Triton-Robotics/Simulation.git
 [submodule "src/TR-YOLOX-ROS"]
 	path = src/TR-YOLOX-ROS
 	url = git@github.com:Triton-Robotics/TR-YOLOX-ROS.git
