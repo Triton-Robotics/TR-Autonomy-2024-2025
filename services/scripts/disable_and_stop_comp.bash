@@ -1,2 +1,4 @@
 sudo systemctl stop launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@classical_node launch_ros_node@aiming_node.service yolox.service jetson_setup_tr.service
+echo "stopped all nodes"
 sudo systemctl disable launch_ros_node@stm32_bridge.service launch_ros_node@camera_node.service launch_ros_node@classical_node launch_ros_node@aiming_node.service yolox.service jetson_setup_tr.service
+echo "disabled all nodes"
