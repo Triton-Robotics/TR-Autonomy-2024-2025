@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "ament",
+            "task": "cppcheck", // The name of the problem matcher
+            "path": "src/", // The path to your source files
+            "commandOptions": "--language=c++", // Optional additional command line options
+            "envSetup": "export AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS=1", // Optional setup to run before liner (ex: source /opt/ros/humble/setup.bash )
+            "problemMatcher": [
+                "$ament_cppcheck" // the corresponding problem matcher - can be used independently
+            ],
+            "label": "ament: TR checkcpp"
+        }
+    ]
+}
