@@ -28,3 +28,6 @@
 [submodule "src/tr-bringup"]
 	path = src/tr-bringup
 	url = git@github.com:Triton-Robotics/tr-bringup.git
+[submodule "src/point_LIO"]
+	path = src/point_LIO
+	url = git@github.com:Triton-Robotics/tr-point-LIO.git
