@@ -65,6 +65,12 @@ source install/setup.bash
 
 4. Run your node/launch file
 
+5. You can exit the venv using
+
+```bash
+deactivate
+```
+
 ### Configuring python ros packages to use the venv
 
 You must add the following to the `setup.cfg` file for all python packages in your workspace
