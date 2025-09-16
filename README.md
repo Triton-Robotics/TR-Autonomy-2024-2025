@@ -22,3 +22,60 @@ cd ./launch
 chmod u+x ./sim_aiming_launch.bash
 ./sim_aiming_launch.bash
 ```
+
+## Python virtual environment  
+
+### Overview
+
+Instead of having to install python dependencies into your system python, potentially leading to conflicts, we can use a python virtual environment
+
+### Setup
+
+```bash
+apt install python3.10-venv
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+pip install -r requirements.txt
+```
+
+### Development cycle
+
+1. Source ros
+
+```bash
+source /opt/ros/humble/setup.bash
+```
+
+2. Activate the virtual python environment  
+
+```bash
+source .venv/bin/activate
+```
+
+You should see a `(.venv)` in front of your prompt
+
+3. Source the workspace
+
+```bash
+source install/setup.bash
+```
+
+4. Run your node/launch file
+
+5. You can exit the venv using
+
+```bash
+deactivate
+```
+
+### Configuring python ros packages to use the venv
+
+You must add the following to the `setup.cfg` file for all python packages in your workspace
+
+```
+[build_scripts]
+executable=/usr/bin/env python3
+```
